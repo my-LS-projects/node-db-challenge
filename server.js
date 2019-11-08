@@ -5,7 +5,8 @@ const server = express();
 
 server.use(helmet());
 server.use(express.json());
-// server.use('/api/projects/', projectsRouter)
+server.use('/api/projects/', projectsRouter);
+
 
 server.get("/", (req, res) => res.send("<h1>Life is Fair 4 Me</h1>"));
 
