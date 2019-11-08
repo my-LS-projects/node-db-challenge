@@ -3,7 +3,7 @@ exports.up = function(knex) {
   return knex.schema.createTable('resources', tbl => {
       tbl.increments();
       tbl.string('resource_name', 255).notNullable();
-      tbl.string('description', 255);
+      tbl.string('resource_description', 255);
   })
 };
 
